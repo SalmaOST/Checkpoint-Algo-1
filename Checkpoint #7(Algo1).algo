@@ -8,9 +8,9 @@ BEGIN
    write ("Veuillez saisir votre phrase");
    Read (s);
     
-    IF (crtr != ".")) THEN
+    WHILE (crtr != ".")) DO
         crtr := s.length;
-    END_IF
+    END_WHILE
 
     FOR i FROM 0 TO crtr STEP 1  DO
     // in english we have 4 vowels
