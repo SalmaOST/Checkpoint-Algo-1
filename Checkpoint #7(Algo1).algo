@@ -7,11 +7,10 @@ VAR
 BEGIN
    write ("Veuillez saisir votre phrase");
    Read (s);
-    
+    //Number of Character
     WHILE (crtr != ".")) DO
         crtr := s.length;
-    END_WHILE
-
+    //Number of vowels
     FOR i FROM 0 TO crtr STEP 1  DO
     // in english we have 4 vowels
       IF (s[i]==='a' or s[i]==='o' or s[i]==='i' or s[i]==='e' ) THEN
@@ -24,6 +23,7 @@ BEGIN
       END_IF
       RETURN words;
     END_FOR
+    END_WHILE
 
 END
 
