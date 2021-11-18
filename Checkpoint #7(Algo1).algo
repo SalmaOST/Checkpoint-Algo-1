@@ -1,0 +1,30 @@
+ALGORITHM Checkpoint7
+VAR
+    crtr : INTEGER :=0;
+    vowels : INTEGER :=0;
+    words: INTEGER :=1;
+    s: STRING;
+BEGIN
+   write ("Veuillez saisir votre phrase");
+   Read (s);
+    
+    IF (crtr != ".")) THEN
+        crtr := s.length;
+    END_IF
+
+    FOR i FROM 0 TO crtr STEP 1  DO
+    // in english we have 4 vowels
+      IF (s[i]==='a' or s[i]==='o' or s[i]==='i' or s[i]==='e' ) THEN
+        vowels ++;
+      END_IF
+      RETURN vowels;
+    // Number of words
+      IF (s[i]=== " ") THEN
+      words ++ ;
+      END_IF
+      RETURN words;
+    END_FOR
+
+END
+
+
